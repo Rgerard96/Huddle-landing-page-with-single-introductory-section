@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: hsl(257, 40%, 49%);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  margin-bottom: 1.2rem;
+  line-height: 3.3rem;
+}
+
+p{
+  line-height: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+#container{
+  max-width: 1440px;
+  margin: auto;
+  padding: 2rem 3.5rem;
+  background: url(./images/bg-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.logo{
+  width: 12rem;
+  margin-bottom: 3rem;
+}
+
+#main-content{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.illustration{
+  width: 56%;
+}
+
+#content-box{
+  width: 40%;
+  padding-top: 2.5rem;
+}
+
+span{
+  display: block;
+}
+
+.btn{
+  padding: .8rem 2.7rem;
+  font-family:'Poppins', sans-serif;
+  background: white;
+  text-decoration: none;
+  border-radius: 20rem;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 0.1rem .2rem .8rem rgba(0, 0, 0, 0.5);
+}
+
+#social-links{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 32px;
+}
+
+.fab{
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 1440px){
+  #container{
+    background: none;
+  }
+}
+
+@media screen and (max-width: 450px){
+  body{
+    font-size: 16.5px;
+  }
+  h1{
+    font-size: 23px;
+    letter-spacing: 0;
+    margin-bottom: 1.2rem;
+    line-height: 2.5rem;
+  }
+  
+  p{
+    line-height: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+  #container{
+    padding: 2rem 2rem;
+    background: url(./images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .logo{
+    width: 8rem;
+    margin-bottom: 3rem;
+  }
+
+  #main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 0;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .illustration{
+    width: 95%;
+  }
+  
+  #content-box{
+    width: 100%;
+    padding-top: 3.5rem;
+  }
+  .btn{
+    padding: .8rem 5rem;
+  }
+
+  #social-links{
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: .8rem;
+  }
+}
