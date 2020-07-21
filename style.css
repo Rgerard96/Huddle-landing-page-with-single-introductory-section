@@ -89,7 +89,7 @@ span{
 
 @media screen and (max-width: 450px){
   body{
-    font-size: 16.5px;
+    font-size: 17px;
   }
   h1{
     font-size: 23px;
@@ -123,7 +123,7 @@ span{
   }
   
   .illustration{
-    width: 95%;
+    width: 100%;
   }
   
   #content-box{
